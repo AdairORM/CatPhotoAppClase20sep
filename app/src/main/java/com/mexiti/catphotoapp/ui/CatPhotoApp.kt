@@ -29,7 +29,7 @@ fun CatApp(){
     ) {
         Surface(
             modifier = Modifier.fillMaxSize()) {
-            val catViewModel:CatViewModel = viewModel()
+            val catViewModel:CatViewModel = viewModel(factory = CatViewModel.Factory)
             HomeScreen(catUiState = catViewModel.catUiState, contentPadding = it)
 
         }

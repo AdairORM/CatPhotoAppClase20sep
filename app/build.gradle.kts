@@ -3,7 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("org.jetbrains.kotlin.plugin.serialization") version "1.9.22"
 }
-
+//
 android {
     namespace = "com.mexiti.catphotoapp"
     compileSdk = 34
@@ -65,11 +65,13 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
     // Kotlin serialization
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
-
+//Build
     //Show images
     implementation("io.coil-kt:coil-compose:2.4.0")
 
-
+    //Testing
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.1")
 
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.ui:ui-graphics")
